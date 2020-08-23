@@ -48,30 +48,7 @@ async function search() {
 	hits = result.hits;
 	console.log(hits)
 }
-
-
 </script>
-
-<style>
-	em {
-		color: darkcyan;
-        font-weight: bold;
-        font-style: normal;
-	}
-    .blue {
-        color: #00EE3B;
-    }
-    dco {
-        color: #E9EC54;
-        padding-right: 0.8em;
-    }
-    qco {
-        color: #B387FF;
-    }
-    .answer {
-        padding-left: 2em;
-    }
-</style>
 
 <h1>ea<span class="blue">s</span>rch</h1>
 search for things
