@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset='utf-8'>
+	<meta name='viewport' content='width=device-width,initial-scale=1'>
+
+	<title>Svelte app</title>
+
+	<link rel='icon' type='image/png' href='/favicon.png'>
+	<!-- Algolia throws an error if you don't make up a process var :shrug:-->
+	<script>window.process = {env: { DEBUG: undefined } }</script> 
+	<script defer src='/build/bundle.js'></script>
+	<style>
+	em {
+		color: darkcyan;
+        font-weight: bold;
+        font-style: normal;
+	}
+	</style>
+</head>
+<body style="word-wrap: break-word;" bgcolor="#323232" text="white" link="#00FF00" vlink="#67FF79" >
+</body>
+</html>
