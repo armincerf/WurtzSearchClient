@@ -68,7 +68,7 @@
 </h1>
 search for things
 <div>
-  <input type="text" bind:value={query} on:keyup={search} />
+  <input type="text" bind:value={query} on:input={search} />
 </div>
 
 {#each hits as hit}
