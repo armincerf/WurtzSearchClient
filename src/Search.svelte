@@ -8,6 +8,7 @@
   let query = "";
   let hits = [];
   let extraHits = [];
+  let totalHits = 0;
   let appID = "XMYY7X6YSY";
   let apiKey = "e78bc0e48fb18f5972e9e8710d269911";
   let indexName = "test_questions";
@@ -52,11 +53,13 @@
       hitsPerPage: 100,
       advancedSyntax: true
     });
+    totalHits = result.nbHits;
     hits = result.hits;
   }
   async function loadMore() {
     const result = await index.search(query, {
-      hitsPerPage: 1000, 
+      offset: 100, 
+      length: 2000,
       advancedSyntax: true
     });
     extraHits = result.hits;
@@ -86,7 +89,7 @@ search for things
     </section>
   {/if}
 {/each}
-{#if hits.length && !extraHits.length}
+{#if hits.length && !extraHits.length && hits.length < totalHits }
   <button on:click={loadMore}>load more</button>
 {/if}
 {#each extraHits as hit}
