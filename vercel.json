@@ -1,3 +1,5 @@
 {
-  "routes": [{ "src": "/q.php", "dest": "https://billwurtz.com/q.php" }]
-}
+    "redirects": [
+      { "source": "/q.php", "destination": "https://billwurtz.com/questions/q.php" }
+    ]
+  }
