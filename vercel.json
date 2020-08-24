@@ -1,9 +1,8 @@
 {
-    "redirects": [
-      {
-        "source": "/(.*).php",
-        "destination": "https://billwurtz.com/questions/$1.php",
-        "statusCode": 301
-      }
-    ]
-  }
+  "redirects": [
+    {
+      "source": "/q.php",
+      "destination": "https://billwurtz.com/questions/q.php"
+    }
+  ]
+}
