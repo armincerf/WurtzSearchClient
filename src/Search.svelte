@@ -50,12 +50,14 @@
   async function search() {
     const result = await index.search({ query }.query, {
       hitsPerPage: 100,
+      advancedSyntax: true
     });
     hits = result.hits;
   }
   async function loadMore() {
     const result = await index.search(query, {
-      hitsPerPage: 1000,
+      hitsPerPage: 1000, 
+      advancedSyntax: true
     });
     extraHits = result.hits;
   }
