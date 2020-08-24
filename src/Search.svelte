@@ -11,7 +11,7 @@
   let totalHits = 0;
   let appID = "XMYY7X6YSY";
   let apiKey = "e78bc0e48fb18f5972e9e8710d269911";
-  let indexName = "test_questions";
+  let indexName = "bill questions";
   let dateTimeFormat = new Intl.DateTimeFormat("en-us", {
     year: "2-digit",
     month: "2-digit",
