@@ -62,9 +62,7 @@
 </script>
 
 <h1>
-  ea
-  <span class="blue">s</span>
-  rch
+  ea<span class="blue">s</span>rch
 </h1>
 search for things
 <div>
