@@ -59,7 +59,7 @@
   async function loadMore() {
     const result = await index.search(query, {
       offset: 100, 
-      length: 2000,
+      length: 1000,
       advancedSyntax: true
     });
     extraHits = result.hits;
